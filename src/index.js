@@ -1,5 +1,5 @@
 import dva from 'dva';
-import './assets/css/base.css'
+import './assets/css/base.css';
 import './index.css';
 
 // 1. Initialize
