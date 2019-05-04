@@ -246,9 +246,9 @@ class HomeMain extends React.Component {
                                     } else if (this.state.NP === 1) {
                                         return (
                                             <div className={styles.inform}>
-                                                <p style={{ color: this.state.slide[this.state.Pcontent + 1 > this.state.slide.length - 1 ? 0 : this.state.Pcontent+1].GnameColor }} className={styles.gameP1}>{this.state.slide[this.state.Pcontent + 1 > this.state.slide.length-1 ? 0 : this.state.Pcontent+1].Gname}</p>
-                                                <p className={styles.gameP2}>{this.state.slide[this.state.Pcontent + 1 > this.state.slide.length - 1 ? 0 : this.state.Pcontent+1].headline}</p>
-                                                <p className={styles.gameP3}>{this.state.slide[this.state.Pcontent + 1 > this.state.slide.length - 1 ? 0 : this.state.Pcontent+1].message}</p>
+                                                <p style={{ color: this.state.slide[this.state.Pcontent + 1 > this.state.slide.length - 1 ? 0 : this.state.Pcontent + 1].GnameColor }} className={styles.gameP1}>{this.state.slide[this.state.Pcontent + 1 > this.state.slide.length - 1 ? 0 : this.state.Pcontent + 1].Gname}</p>
+                                                <p className={styles.gameP2}>{this.state.slide[this.state.Pcontent + 1 > this.state.slide.length - 1 ? 0 : this.state.Pcontent + 1].headline}</p>
+                                                <p className={styles.gameP3}>{this.state.slide[this.state.Pcontent + 1 > this.state.slide.length - 1 ? 0 : this.state.Pcontent + 1].message}</p>
                                             </div>
                                         )
                                     }
@@ -312,6 +312,31 @@ class HomeMain extends React.Component {
                             </span>
 
                         </div>
+                    </div>
+
+                    <div className={styles.activity}>
+                        <div className={styles.activityTitle}>
+                            <span>最新活动</span>
+                        </div>
+                        <div className={styles.Aslide}>
+                            <nav>
+                                <li>
+                                    <img src={require('../../assets/img/original_1556269931.jpg')} alt="" />
+                                    <img src={require('../../assets/img/original_1556273114.jpg')} alt="" />
+                                </li>
+                                <li>
+
+                                </li>
+                            </nav>
+
+                        </div>
+                    </div>
+
+                    <div className={styles.information}>
+                        <div className={styles.informationTitle}>
+                            <span>最新咨询</span>
+                        </div>
+                        <div></div>
                     </div>
                 </main>
             </div>
