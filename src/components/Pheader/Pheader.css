@@ -1,0 +1,138 @@
+#header{
+    height: 159px;
+    box-sizing: border-box;
+}
+.header{
+    height: 159px; 
+    width: 1393px;
+    margin: 0 auto;
+    /* background: pink; */
+}
+.header>h2{
+    padding-top: 35px;
+    float: left;
+}
+.header>h2 a{
+    display: block;
+    height: 45px;
+    width: 192px;
+    background: url(../../assets/img/P-logo.png)no-repeat;
+    text-indent: -999em;
+}
+.search{
+    width: 461px;
+    float: left;
+    margin-left: 274px;
+    height: 159px;
+    box-sizing: border-box;
+    /* background: salmon; */
+    padding-top: 34px;
+}
+.search p{
+    position: relative;
+}
+.search p input{
+    height: 46px;
+    width: 100%;
+    box-sizing: border-box;
+    border:1px solid  #C8CEDB;
+    border-radius:21px;
+    padding-left: 50px;
+    font-size: 16px;
+}
+.search p span{
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 15px;
+     background: url(../../assets/img/P-search.png)no-repeat;
+     top: 16px;
+     left: 21px;
+}
+.search>ul{
+    width: 100%;
+    padding-top: 12px;
+    padding: 12px 85px 0;
+    text-align: center;
+    float: left;
+}
+.search>ul>li{
+    float: left;
+}
+.search>ul>li>a{
+    display: block;
+    padding: 13px 28px;
+    text-decoration:none;
+    font-size: 16px;
+    color:#008AA4;
+    background: linear-gradient(to right,white 50%,transparent 50%);
+    transition: all 1s;
+}
+.search>ul>li:hover a{
+    background: linear-gradient(to right,#4268a6 50%,transparent 50%);
+    background-size: 201% 100%;
+    background-position: right bottom;
+    
+}
+.header .hright{
+    padding-top: 34px;
+    margin-left: 228px;
+    width: 238px;
+    height: 92px;
+    float: left;
+    position: relative;
+}
+.header .hright a{
+    display: inline-block;
+    height: 34px;
+    font-size: 16px;
+    color:#000000;
+    padding-top: 8px;
+    padding-left: 40px;
+}
+.header .hright a:nth-of-type(1){
+    background: url(../../assets/img/P-n1.png)no-repeat left;
+    margin-right: 40px;
+}
+.header .hright a:nth-of-type(2){
+    background: url(../../assets/img/P-n2.png)no-repeat left;
+}
+.header .hright>span{
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #C3DBE0;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color:#fff;
+    font-weight: 600;
+    right: 16px;
+    top: 40px;
+}
+.header .hright p{
+    height: 30px;
+    line-height:30px;
+    font-size: 16px;
+    color:#EDC800;
+    box-sizing: border-box;
+    float: right;
+    padding-right: 15px;
+}
+.header .hright p span:nth-of-type(1){
+    color:#929DB6;
+}
+.header .hright p span:nth-of-type(2),.header .hright p span:nth-of-type(3){
+    font-weight: 600;
+}
+.header .hright p i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    padding: 0 2px;
+    position: relative;
+    top: 8px;
+    background: url(../../assets/img/P-n3.png)no-repeat center;
+}
+
