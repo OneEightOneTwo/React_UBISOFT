@@ -2,6 +2,8 @@ import React from 'react';
 import styles from './HomeMain.css';
 import './HomeMain.css';
 
+let timer = undefined;
+
 class HomeMain extends React.Component {
     constructor(props) {
         super(props);
@@ -98,8 +100,138 @@ class HomeMain extends React.Component {
             Popactw: 5,
             Pcontent: 2,
             // next或prve
-            NP: 0
+            NP: 0,
+
+            // 最新活动
+            newActivity: [{
+                Images1: require('../../assets/img/original_1556269931.jpg'),
+                Images2: require('../../assets/img/original_1556273114.jpg')
+            }, {
+                Images1: require('../../assets/img/original_1556805974.jpg'),
+                Images2: require('../../assets/img/original_1556175442.jpg')
+            }],
+
+            highlight: 0,
+            on_off: 0,
+            // 最新咨询
+            newAdvisory: [{
+                img: require('../../assets/img/original_1556880924.png'),
+                title: '再创佳绩！《纪元1800》成为该系列最快销作品',
+                time: '2019/05/03',
+                inner: '《纪元1800》已经成为了该系列迄今为止销售最快的游戏作品，其发售首周的销量更是超过了前作《纪元2205》发售同期的4倍'
+            },
+            {
+                img: require('../../assets/img/original_1556852873.png'),
+                title: '《刺客信条：燎原》即将迎来重大更新！',
+                time: '2019/05/03',
+                inner: '刺客们注意了！《刺客信条：燎原》即将迎来重大更新。'
+            },
+            {
+                img: require('../../assets/img/original_1556852681.jpg'),
+                title: '《极限巅峰》第六赛季正式上线！',
+                time: '2019/05/03',
+                inner: '第6赛季「雕刻曲线」将是第一个月度赛季，拥有各项全新特色。你可以在这篇专题新闻中找到所有更新的细节。迎接五月赛季中的各项挑战，获得独家鲑鱼套装！一起来看看这个月将会带来的精彩活动吧。'
+            },
+            {
+                img: require('../../assets/img/original_1556852703.png'),
+                title: '《魔法门之英雄无敌：元素守护者》竞技场黄金月即将开启！',
+                time: '2019/05/03',
+                inner: '亲爱的英雄们，本月我们有一个全新的活动为你们开启：竞技场黄金月。在接下来4周期间，竞技场联盟奖励将逐季变得越来越丰厚。'
+            },
+            {
+                img: require('../../assets/img/original_1556852354.jpg'),
+                title: '《极限巅峰》4月29日更新说明',
+                time: '2019/05/03',
+                inner: '本次《极限巅峰》的维护与更新内容如下：'
+            },
+            {
+                img: require('../../assets/img/original_1556846070.jpg'),
+                title: '《荣耀战魂》第三年第二赛季“樱”现已上线',
+                time: '2019/05/03',
+                inner: '育碧宣布《荣耀战魂》第三年第二赛季“樱”现已正式登陆PC、PS4以及Xbox One平台。'
+            }],
+            //育碧游戏
+            UB_game: [{
+                gameImags: require('../../assets/img/division2.jpg'),
+                gameTitle: '全境封锁2',
+                gameTime: '2019-3-15',
+                gamePlatform: ['pc_icon', 'cons_icon']
+            },
+            {
+                gameImags: require('../../assets/img/trialsrising.jpg'),
+                gameTitle: '特技摩托：崛起',
+                gameTime: '2019-2',
+                gamePlatform: ['pc_icon', 'cons_icon']
+            },
+            {
+                gameImags: require('../../assets/img/spacejunkies.jpg'),
+                gameTitle: '太空镖客',
+                gameTime: '2019-03-26',
+                gamePlatform: []
+            },
+            {
+                gameImags: require('../../assets/img/hgn.jpg'),
+                gameTitle: '孩之宝游戏之夜',
+                gameTime: '2018-10-31',
+                gamePlatform: ['cons_icon']
+            },
+            {
+                gameImags: require('../../assets/img/jd2019.jpg'),
+                gameTitle: '舞力全开2019',
+                gameTime: '2018-10-26',
+                gamePlatform: ['cons_icon']
+            },
+            {
+                gameImags: require('../../assets/img/acod.jpg'),
+                gameTitle: '刺客信条：奥德赛',
+                gameTime: '2018-10-5',
+                gamePlatform: ['pc_icon', 'cons_icon']
+            },
+            {
+                gameImags: require('../../assets/img/E32018.jpg'),
+                gameTitle: '育碧E3',
+                gameTime: '2018-06-12 04:00:00',
+                gamePlatform: []
+            },
+            {
+                gameImags: require('../../assets/img/farcry5.jpg'),
+                gameTitle: '孤岛惊魂5',
+                gameTime: '2018-03-27',
+                gamePlatform: ['pc_icon', 'cons_icon']
+            },
+            {
+                gameImags: require('../../assets/img/aco.jpg'),
+                gameTitle: '刺客信条：起源',
+                gameTime: '2017-10',
+                gamePlatform: ['pc_icon', 'cons_icon']
+            },
+            {
+                gameImags: require('../../assets/img/rkb.jpg'),
+                gameTitle: '马力欧+疯狂兔子：王国之战',
+                gameTime: '2017-8-29',
+                gamePlatform: ['cons_icon']
+            },
+            {
+                gameImags: require('../../assets/img/eoc.jpg'),
+                gameTitle: '魔法门之英雄无敌：战争纪元',
+                gameTime: '2017年6月20日',
+                gamePlatform: ['phone_icon']
+            },
+            {
+                gameImags: require('../../assets/img/grw.jpg'),
+                gameTitle: '幽灵行动：荒野',
+                gameTime: '2017-03-07',
+                gamePlatform: ['pc_icon', 'cons_icon']
+            },
+            {
+                gameImags: require('../../assets/img/honor.jpg'),
+                gameTitle: '荣耀战魂',
+                gameTime: '2017-02-14',
+                gamePlatform: ['pc_icon', 'cons_icon']
+            }]
         }
+
+
 
     }
     next() {
@@ -203,7 +335,6 @@ class HomeMain extends React.Component {
             slide: data2
         }))
     }
-
     // 排他
     empty() {
         for (var i = 0; i < this.state.slide.length; i++) {
@@ -215,8 +346,42 @@ class HomeMain extends React.Component {
         }
     }
 
+    // 自动切换
+    auto() {
+        timer = setInterval(() => {
+            this.setState(prevState => ({
+                highlight: ++prevState.highlight > 1 ? 0 : this.state.highlight,
+            }));
+        }, 5000);
+    }
+
+    // 移入停止
+    stop() {
+        clearInterval(timer);
+    }
+    start() {
+        this.auto();
+    }
+
+    aPrve() {
+        this.setState(prevState => ({
+            highlight: --prevState.highlight < 0 ? 1 : this.state.highlight
+        }))
+    }
+
+    aNext() {
+        this.setState(prevState => ({
+            highlight: ++prevState.highlight > 1 ? 0 : this.state.highlight,
+        }))
+    }
+
     componentDidMount() {
         this.init();
+        //最新资讯
+        this.auto();
+    }
+    componentWillUnmount() {
+        clearInterval(timer);
     }
     render() {
         return (
@@ -318,16 +483,25 @@ class HomeMain extends React.Component {
                         <div className={styles.activityTitle}>
                             <span>最新活动</span>
                         </div>
-                        <div className={styles.Aslide}>
+                        <div className={styles.Aslide} onMouseEnter={this.stop.bind(this)} onMouseLeave={this.start.bind(this)}>
                             <nav>
                                 <li>
+                                    <img src={this.state.newActivity[this.state.highlight].Images1} alt="" />
+                                    <img src={this.state.newActivity[this.state.highlight].Images2} alt="" />
+                                </li>
+                                {/* <li>
                                     <img src={require('../../assets/img/original_1556269931.jpg')} alt="" />
                                     <img src={require('../../assets/img/original_1556273114.jpg')} alt="" />
-                                </li>
-                                <li>
-
-                                </li>
+                                </li> */}
                             </nav>
+                            <div className={styles.aButtons}>
+                                <p className={styles.aPrve} onClick={this.aPrve.bind(this)}></p>
+                                <p className={styles.aFocus} >
+                                    <span className={this.state.highlight === 0 ? styles.active : ''}></span>
+                                    <span className={this.state.highlight === 1 ? styles.active : ''}></span>
+                                </p>
+                                <p className={styles.aNext} onClick={this.aNext.bind(this)}></p>
+                            </div>
 
                         </div>
                     </div>
@@ -336,7 +510,58 @@ class HomeMain extends React.Component {
                         <div className={styles.informationTitle}>
                             <span>最新咨询</span>
                         </div>
-                        <div></div>
+                        <nav className={styles.informText}>
+                            {(() => {
+                                let lis = this.state.newAdvisory.map((item, index) => {
+                                    return (
+                                        <li key={index}>
+                                            <img src={item.img} alt="" />
+                                            <section>
+                                                <h3> <a href="">{item.title}</a></h3>
+                                                <p className={styles.new_data}>{item.time}</p>
+                                                <p className={styles.message}>
+                                                    {item.inner}
+                                                </p>
+                                                <div className={styles.white}></div>
+                                            </section>
+                                        </li>
+                                    )
+                                });
+                                return lis;
+                            })()}
+                        </nav>
+                        <div className={styles.button}>
+                            <a href="">更多</a>
+                        </div>
+                    </div>
+
+                    <div className={styles.game}>
+                        <div className={styles.gameTitle}>
+                            <span>育碧游戏</span>
+                        </div>
+                        <nav className={styles.gameList}>
+                            <li>
+                                <div className={styles.gameInner}>
+                                    <a href="">
+                                        <img src={require('../../assets/img/division2.jpg')} alt="" />
+                                    </a>
+                                    <div className={styles.gameText}>
+                                        <h3>全境封锁2</h3>
+                                        <p className={styles.gameTime}>
+                                            发布时间：2019-3-15
+                                        </p>
+                                        <div className={styles.icons}>
+                                            <span className={styles.pc_icon}></span>
+                                            <span className={styles.cons_icon}></span>
+                                        </div>
+                                    </div>
+                                    <div className={styles.bottom_S}>
+                                        <img src={require('../../assets/img/shadow.jpg')} alt="" />
+                                    </div>
+                                </div>
+                            </li>
+                        </nav>
+
                     </div>
                 </main>
             </div>
