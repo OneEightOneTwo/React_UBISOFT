@@ -1,6 +1,7 @@
 import dva from 'dva';
 import './assets/css/base.css';
 import './index.css';
+import './assets/css/base.css';
 
 // 1. Initialize
 const app = dva();

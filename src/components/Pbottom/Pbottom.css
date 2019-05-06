@@ -1,0 +1,88 @@
+#bottom{
+    height: 519px;
+    background: #000000;
+}
+#bottom p{
+    color:#6B6B6B;
+    width: 1182px;
+    padding: 0 165px;
+    font-size: 18px;
+    padding-top: 30px;
+}
+#bottom dl{
+    float: left;
+    padding: 0 110px;
+    padding-top: 33px;
+}
+#bottom dl dt{
+    color:#fff;
+    cursor: pointer;
+    margin-bottom: 48px;
+}
+#bottom dl dd{
+    color:#008AA4;
+    cursor: pointer;
+    line-height: 30px;
+}
+#bottom dl:nth-of-type(1){
+    margin-left: 245px;
+}
+#bottom dl:nth-of-type(3) dd:nth-of-type(1){
+    text-align: center;
+    height: 35px;
+    width: 182px;
+    box-sizing: border-box;
+    border:1px solid #008AA4;
+    line-height: 35px;
+}
+#bottom dl:nth-of-type(3) dd:nth-of-type(1):hover{
+    background: rgb(46, 199, 230);
+}
+.btt{
+    height: 112px;
+    background: #2A2C2E;
+    padding: 0 125px;
+}
+.btt>div{
+    padding-top: 25px;
+    overflow: hidden;
+} 
+.btt>div h2{
+    float: left;
+}
+.btt>div h2 a{
+    display: block;
+    width: 100px;
+    height: 25px;
+    text-indent: -990em;
+    background: url(../../assets/img/P-bottom-logo.png)no-repeat;
+}
+.btt>div p{
+    float: right;
+}
+.btt>div p span{
+    display: inline-block;
+    width: 30px;
+    height: 27px;
+    padding: 0 10px;
+}
+.btt>div p span:nth-of-type(1){
+    background: url(../../assets/img/Pb-b1.png)no-repeat;
+}
+.btt>div p span:nth-of-type(2){
+    background: url(../../assets/img/Pb-b2.png)no-repeat;
+}
+
+.btt>div p span:nth-of-type(3){
+    background: url(../../assets/img/Pb-b3.png)no-repeat;
+}
+.btt>p{
+    width: 707px;
+    color:#fff;
+    font-size: 12px;
+    text-align:center;
+    line-height: 18px;
+    margin-top: 6px;
+    margin-left: 239px;
+}
+

@@ -1,0 +1,29 @@
+.top{
+    height: 59px;
+    box-sizing: border-box;
+    background: #DB3608;
+    border-bottom:1px solid #E08F7C;
+    text-align: center;
+    padding: 0 400px;
+}
+.top p{
+    float: left;
+    height: 59px;
+    font-size: 26px;
+    color:white;
+    line-height: 59px;
+    margin-left: 152px;
+}
+.top a{
+    margin-top: 10px;
+    float: left;
+    font-size: 14px;
+    height: 40px;
+    width: 90px;
+    display: block;
+    line-height: 40px;
+    background: #FFFFFF;
+    color:#DB3608;
+    text-decoration:none;
+    margin-left: 25px;
+}
