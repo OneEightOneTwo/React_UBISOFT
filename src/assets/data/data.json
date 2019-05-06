@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "name": "全境封锁2",
+        "price": 104,
+        "date": "19-01-06",
+        "url": "../../assets/img/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "孤岛惊魂：新曙光",
+        "price": 104,
+        "date": "19-01-06",
+        "url": "../../assets/img/2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "特技摩托：崛起",
+        "price": 104,
+        "date": "19-01-06",
+        "url": "../../assets/img/3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "纪元1800",
+        "price": 704,
+        "date": "19-02-03",
+        "url": "../../assets/img/4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "太空镖客",
+        "price": 104,
+        "date": "18-05-03",
+        "url": "../../assets/img/5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "刺客信条：燎原",
+        "price": 84,
+        "date": "17-05-03",
+        "url": "../../assets/img/6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "孩之宝游戏之夜",
+        "price": 824,
+        "date": "16-04-03",
+        "url": "../../assets/img/7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "运动派对",
+        "price": 123,
+        "date": "15-08-03",
+        "url": "../../assets/img/8.jpg"
+    },
+    {
+        "id": 9,
+        "name": "舞力全开2019",
+        "price": 623,
+        "date": "17-08-03",
+        "url": "../../assets/img/9.jpg"
+    },
+    {
+        "id": 10,
+        "name": "星链:阿特拉斯之战",
+        "price": 323,
+        "date": "18-08-03",
+        "url": "../../assets/img/10.jpg"
+    },
+    {
+        "id": 11,
+        "name": "刺客信条：奥德赛",
+        "price": 223,
+        "date": "15-08-03",
+        "url": "../../assets/img/11.jpg"
+    },
+    {
+        "id": 12,
+        "name": "饥饿龙",
+        "price": 23,
+        "date": "19-08-03",
+        "url": "../../assets/img/12.jpg"
+    },
+    {
+        "id": 13,
+        "name": "育碧E3",
+        "price": 45,
+        "date": "14-08-03",
+        "url": "../../assets/img/13.jpg"
+    },
+    {
+        "id": 14,
+        "name": "魔法门之英雄无敌：元素守护者",
+        "price": 105,
+        "date": "12-08-03",
+        "url": "../../assets/img/14.jpg"
+    },
+    {
+        "id": 15,
+        "name": "孤岛惊魂5",
+        "price": 15,
+        "date": "16-05-03",
+        "url": "../../assets/img/15.jpg"
+    },
+    {
+        "id": 16,
+        "name": "飙酷车神2",
+        "price": 145,
+        "date": "13-05-03",
+        "url": "../../assets/img/16.jpg"
+    },
+    {
+        "id": 17,
+        "name": "刺客信条：起源",
+        "price": 345,
+        "date": "11-05-03",
+        "url": "../../assets/img/17.jpg"
+    },
+    {
+        "id": 18,
+        "name": "碧海黑帆",
+        "price": 345,
+        "date": "10-09-03",
+        "url": "../../assets/img/18.jpg"
+    },
+    {
+        "id": 19,
+        "name": "马力欧+疯狂兔子：王国之战",
+        "price": 105,
+        "date": "10-3-03",
+        "url": "../../assets/img/19.jpg"
+    },
+    {
+        "id": 20,
+        "name": "2017-育碧CJ",
+        "price": 368,
+        "date": "19-03-03",
+        "url": "../../assets/img/20.jpg"
+    }
+]
