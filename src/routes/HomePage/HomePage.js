@@ -1,18 +1,18 @@
 import React from 'react';
 import { connect } from 'dva';
-import styles from './HomePage.css';
-// import Header from '../../components/Header/Header';
-import Ptop from '../../components/Ptop/Ptop';
-import Pheader from '../../components/Pheader/Pheader';
-import Pbottom from '../../components/Pbottom/Pbottom';
+
+// import styles from './IndexPage.css';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
+import HomeMain from '../../components/HomeMain/HomeMain';
+
 
 function HomePage() {
     return (
        <div>
-           <Ptop/>  
-           <Pheader/>   
-           <div className={styles.banner}></div>
-           <Pbottom/>
+           <Header/>
+           <HomeMain/>
+           <Footer/>
        </div>
     );
 }
