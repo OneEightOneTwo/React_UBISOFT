@@ -3,7 +3,11 @@ import { Router, Route, Switch } from 'dva/router';
 import IndexPage from './routes/IndexPage/IndexPage';
 import GamelistPage from './routes/GamelistPage/GamelistPage';
 import HomePage from './routes/HomePage/HomePage';
+
 import CarPage from './routes/CarPage/CarPage';
+
+import './assets/css/base.css';
+
 
 function RouterConfig({ history }) {
   return (
