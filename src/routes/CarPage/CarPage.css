@@ -1,0 +1,113 @@
+.car{
+    background:#e5e8f0;
+    /* margin: 0 auto; */
+    display: flex;
+    align-items: flex-start;  
+    flex-wrap: nowrap;
+    padding: 30px 70px 30px 70px;
+}
+.car .left{
+    width: 880px;
+    height: 100%;
+    background:#e5e8f0;
+    flex: 1 1 auto;
+    margin-right: 20px;
+    
+    font-size: 1.25rem;
+    color:#fff;
+    padding-left: 25px;
+    margin-bottom:20px;
+}
+.car .left h3{
+    background: #35c1cf;
+    margin-bottom: 20px;
+    line-height: 68px;
+    padding-left: 20px;
+}
+.car .rigth{
+    width: 480px;
+    height: 68px;
+    background:#35c1cf;
+    flex: 1 1 auto;
+    /* line-height: 68px; */
+    font-size: 1.25rem;
+    color:#fff;
+    margin-bottom:20px;
+}
+.car .left .item{
+    background: #fff;
+    margin-bottom: 20px;
+}
+.car .left .item .item_img{
+    width:122px;
+    height: 162px;
+    display: inline-block;
+}
+.car .left .item .item_img img{
+    width: 122px;
+    height: 162px;
+}
+.car .left .item .item_details{
+    display: inline-block;
+    background: #fff;
+   vertical-align: top;
+   margin: 15px 0 0 20px;
+    /* padding: 22px 60px 15px 37px; */
+    /* width: 100%;
+    height: 100%; */
+}
+.car .left .item .item_details .item_details_row1 .box1{
+    display: inline-block;
+    margin-right: 400px;
+}
+.car .left .item .item_details .item_details_row1 .box1 a{
+    font-size: .9375rem;
+    color:#0a0a0a;
+}
+.car .left .item .item_details .item_details_row1 .box1 span{
+    color:#a1c2e7;
+    font-size: 1rem;
+}
+.car .left .item .item_details .item_details_row1 .box2{
+    display: inline-block;
+    vertical-align: top;
+}
+.car .left .item .item_details .item_details_row1 .box2 .span1{
+    color:#3bd388;
+    font-size: .875rem;
+    margin-left: 10px;
+}
+.car .left .item .item_details .item_details_row2{
+    color:#0a0a0a;
+    font-size: .9375rem;
+    vertical-align: top;
+}
+.car .left .item .item_details .item_details_row2 .dow{
+    font-size: .9375rem;
+    line-height: 1.25rem;
+    color: #35c1cf;
+    font-family: "Ubisoft Sans Bold",Arial,sans-serif;
+    margin-right:70px; 
+}
+.car .left .item .item_details .item_details_row3{
+    color:#0a0a36;
+    font-size:16px;
+    margin-top: 5px;
+}
+.car .left .totals{
+    height: 125px;
+    background: #eff1f6;
+    line-height: 125px;
+}
+.car .rigth .order{
+    background:#ffffff;
+    padding: 22px 63px 0 35px;
+}
+.car .rigth .dd .end{
+    width: 280px;
+    transition:all .5s;
+}
+.car .rigth .dd .end:hover{
+    width: 180px;
+}
+
